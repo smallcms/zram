@@ -26,7 +26,7 @@ swapoff -a
 modprobe zram num_devices=$cores
 
 totalmem=$(free | grep -e "^Mem:" | awk '{print $2}')
-mem=$(( $totalmem * 128 ))
+mem=$(( $totalmem * 1024 ))
 
 core=0
 while [ $core -lt $cores ]; do
