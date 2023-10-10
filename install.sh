@@ -27,3 +27,4 @@ EOF
 
 systemctl daemon-reload
 systemctl enable zram.service
+systemctl start zram.service
